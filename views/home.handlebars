@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+
+  <h1>My bookshelf</h1>
+
+  <a href="./bookform">Add new books</a>
+
+  <ul>
+    {{#myBooks}}
+      <li>Title: {{title}} Author: {{author}} <a href="/del/{{@index}}">[x]</a></li>
+    {{/myBooks}}
+  </ul>
+
+
+</body>
+
+</html>

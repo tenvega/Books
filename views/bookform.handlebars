@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <h1>BOOKS</h1>
+  <ul>
+    {{#errorsList}}
+      <li>{{msg}}</li>
+    {{/errorsList}}
+  </ul>
+
+  <form action="/newBook" method="post">
+    <br>
+    <div><input type="text" value="{{booksField.title}}" name="title" placeholder="Book Title" /></div>
+    <br>
+    <div><input type="text" value="{{booksField.author}}" name="author" placeholder="author" /></div>
+    <br>
+    <button>Add New Book</button>
+  </form>
+
+</body>
+
+</html>
